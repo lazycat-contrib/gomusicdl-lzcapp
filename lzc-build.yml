@@ -1,0 +1,4 @@
+pkgout: ./
+
+# icon: 应用图标路径
+icon: ./icon.png
