@@ -1,16 +1,17 @@
 application:
-  subdomain: gomusicdl
+  subdomain: musicdl
   upstreams:
     - location: /
-      backend: http://gomusicdl:8080/
+      backend: http://musicdl:8080/
   public_path:
     - /
 
 services:
-  gomusicdl:
+  musicdl:
     image: docker.1ms.run/guohuiyuan/go-music-dl:1.0.15
+    user: root
     command: "./music-dl web --port 8080 --no-browser --vg-cover --vg-audio --vg-lyric --vg-export"
     environment:
       - TZ=Asia/Shanghai
     binds:
-      - /lzcapp/var/data:/home/appuser/data
+      - /lzcapp/var/data:/root/data
