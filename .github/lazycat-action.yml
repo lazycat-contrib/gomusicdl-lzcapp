@@ -1,0 +1,38 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/musicdl.lpk
+
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: image
+    image: musicdl
+
+build:
+  run_buildscript: false
+
+images:
+  - id: musicdl
+    target: service
+    service: musicdl
+    source: guohuiyuan/go-music-dl
+    channel: stable
+    tag_regex: '^v?[0-9]+\.[0-9]+\.[0-9]+$'
+    delivery:
+      mode: mirror
+      image_template: docker.1ms.run/guohuiyuan/go-music-dl:{tag}
+
+stores:
+  official:
+    enabled: false
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: Music DL
+    summary: 支持多个平台的网页音乐搜索与下载工具
+
