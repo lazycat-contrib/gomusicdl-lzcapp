@@ -5,7 +5,7 @@ description: A web-based music downloader with support for multiple platforms
 min_os_version: 1.5.0
 author: guohuiyuan
 license: MIT
-homepage: https://github.com/Guohuiyuan/music-dl
+homepage: https://github.com/guohuiyuan/go-music-dl
 
 locales:
   zh:
