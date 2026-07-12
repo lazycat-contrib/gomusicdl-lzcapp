@@ -1,12 +1,11 @@
 package: community.lazycat.app.musicdl
-version: 1.0.15
+version: 1.0.31
 name: Music DL
 description: A web-based music downloader with support for multiple platforms
 min_os_version: 1.5.0
 author: guohuiyuan
 license: MIT
 homepage: https://github.com/guohuiyuan/go-music-dl
-
 locales:
   zh:
     name: Music DL
@@ -14,7 +13,6 @@ locales:
   en:
     name: Music DL
     description: Web-based music downloader supporting multiple platforms
-
 permissions:
   required:
     - net.internet

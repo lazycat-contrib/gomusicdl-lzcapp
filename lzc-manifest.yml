@@ -5,11 +5,11 @@ application:
       backend: http://musicdl:8080/
   public_path:
     - /
-
 services:
   musicdl:
     # guohuiyuan/go-music-dl
-    image: docker.1ms.run/guohuiyuan/go-music-dl:1.0.15
+    # upstream: guohuiyuan/go-music-dl:1.0.31
+    image: docker.1ms.run/guohuiyuan/go-music-dl:1.0.31
     user: root
     command: "./music-dl web --port 8080 --no-browser --vg-cover --vg-audio --vg-lyric --vg-export"
     environment:
