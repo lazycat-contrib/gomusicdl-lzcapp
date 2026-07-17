@@ -8,8 +8,8 @@ application:
 services:
   musicdl:
     # guohuiyuan/go-music-dl
-    # upstream: guohuiyuan/go-music-dl:1.0.31
-    image: docker.1ms.run/guohuiyuan/go-music-dl:1.0.31
+    # upstream: guohuiyuan/go-music-dl:1.0.32
+    image: docker.1ms.run/guohuiyuan/go-music-dl:1.0.32
     user: root
     command: "./music-dl web --port 8080 --no-browser --vg-cover --vg-audio --vg-lyric --vg-export"
     environment:
