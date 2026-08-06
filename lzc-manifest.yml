@@ -11,7 +11,7 @@ services:
     # upstream: guohuiyuan/go-music-dl:1.0.33
     image: docker.1ms.run/guohuiyuan/go-music-dl:1.0.33
     user: root
-    command: "./music-dl web --port 8080 --no-browser --vg-cover --vg-audio --vg-lyric --vg-export"
+    command: "./music-dl web --port 8080 --no-browser "
     environment:
       - TZ=Asia/Shanghai
     binds:
