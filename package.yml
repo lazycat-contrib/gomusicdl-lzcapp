@@ -1,5 +1,5 @@
 package: community.lazycat.app.musicdl
-version: 1.0.34
+version: 1.1.0
 name: Music DL
 description: A web-based music downloader with support for multiple platforms
 min_os_version: 1.5.0
