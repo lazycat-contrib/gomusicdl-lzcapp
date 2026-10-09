@@ -4,7 +4,7 @@ name: Music DL
 description: A web-based music downloader with support for multiple platforms
 min_os_version: 1.5.0
 author: guohuiyuan
-license: MIT
+license: AGPL-3.0
 homepage: https://github.com/guohuiyuan/go-music-dl
 locales:
   zh:
